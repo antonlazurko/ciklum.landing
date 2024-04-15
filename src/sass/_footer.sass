@@ -1,2 +1,32 @@
 .footer
+    display: flex
+    justify-content: space-around
+    align-items: center
+    padding: 2.5rem
+    border-top: 2px solid $base-blue
     background-color: $base-gray-light
+    @include respond(tab-port)
+        flex-direction: column
+        align-items: space-around
+    > *:not(:last-child)
+        @include respond(tab-port)
+            margin-bottom: 1.5rem
+
+.social
+    display: flex
+    > *:not(:last-child)
+        margin-right: 1.5rem
+    &_wrapper
+        width: 4.8rem
+        height: 4.8rem
+        border-radius: 3rem
+        border: .1rem solid $base-blue
+        display: flex
+        justify-content: center
+        align-items: center
+    &_icon
+        width: 3rem
+        height: 3rem
+
+.footer-text
+    color: $base-blue
