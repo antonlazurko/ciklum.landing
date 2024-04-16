@@ -1,19 +1,26 @@
 .registration
     background-color: $base-gray-light
     padding-bottom: 15px
+    display: flex
+    justify-content: space-around
 .form
-    width: 40%
-    padding-top: 5rem
-    padding-left: 5rem
-    @include respond(phone)
-        width: 100%
-        padding-top: 3rem
-        padding-bottom: 3rem
+    display: flex
+    flex-wrap: wrap
+    gap: 10px
+    width: 60%
+    padding: 5rem
+    animation: visibility 2s
+    &__group
+        width: calc( 100% / 2 - 10px )
+        &-full-size
+            width: 100%
     &__group:not(:last-child)
         margin-bottom: 2rem
     &__group:nth-child(4)
         margin-bottom: 4rem
     @include respond(tab-port)
+        &__group
+            width: 100%
         &__group:not(:last-child)
             margin-bottom: 0
         &__group:nth-child(4)
@@ -21,16 +28,17 @@
 
     &__input
         background-color: $base-gray-light !important
-        font-size: 2rem
+        font-size: 1.6rem
         letter-spacing: .2rem
         font-weight: 400
         color: $base-dark
         padding: 2rem 0rem 2rem 2rem
         border: none
         border-bottom: .1rem solid $base-blue
-        width: 75%
+        width: 100%
+        &-select
+            padding-bottom: 1.8rem
         @include respond(phone)
-            width: 90%
             box-shadow: $box-shadow
         &:focus
             outline: none
@@ -47,7 +55,7 @@
     &__label
         display: block
         margin: 1rem 0
-        font-size: 2rem
+        font-size: 1.6rem
         letter-spacing: .2rem
         font-weight: 400
         transition: .7s all
@@ -98,3 +106,8 @@
 
 .privacy-link
     color: $base-dark
+
+.text-elipsis
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
