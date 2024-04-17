@@ -3,38 +3,53 @@
     justify-content: space-between
     margin-bottom: 9.6rem
     gap: 1.5rem
-    & > *
-        width: calc( 100% / 2  - 10rem )
+    @include respond(phone)
+        flex-direction: column
     &__description
         display: flex
         flex-direction: column
         justify-content: center
         padding: 1rem 0
+        width: calc( 100% / 2  - 1rem )
+        @include respond(phone)
+            width: 100%
 
     &__content
         position: relative
         overflow: hidden
+        width: calc( 100% / 2  - 1rem )
+        @include respond(phone)
+            width: 100%
+            height: 40vh
         iframe
             border-radius: 5rem
             position: absolute
-            top: 0
+            top: 5%
             left: 0
             width: 100%
-            height: 100%
+            height: 80%
 
 .history-text
     margin-bottom: 7rem
 .we-are
     display: flex
     align-items: center
+    @include respond(phone)
+        justify-content: space-between
     &-text
         font-size: 6vw
         color: $base-blue
         margin-right: 3rem
+        @include respond(phone)
+            font-size: 14vw
     & img
         width: 14vw
+        @include respond(phone)
+            width: 25vw
 .ciklum-text
     font-size: 10vw
     font-weight: 500
     color: $base-blue
+    @include respond(phone)
+        font-size: 22vw
 

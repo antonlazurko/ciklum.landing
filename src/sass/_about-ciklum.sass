@@ -8,11 +8,16 @@
     background-color: #ffffff
     transform: translateX(-8rem)
     box-shadow: $box-shadow
+    @include respond(tab-port)
+        flex-wrap: wrap
 .item
     display: flex
     flex-direction: column
     width: calc( 100% / 4 - 6rem )
     font-weight: 200
+    @include respond(tab-port)
+        width: calc( 100% / 2 - 6rem )
+        margin-bottom: 3rem
     &__key
         font-size: 6vw
         color: $base-blue

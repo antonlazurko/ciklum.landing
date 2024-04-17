@@ -8,7 +8,8 @@
         &-win
             font-weight: 500
             margin-left: 20rem
-
+            @include respond(phone)
+                margin-left: 0
 #list
     position: relative
     list-style: none
@@ -18,6 +19,8 @@
     display: block
     width: 100%
     height: auto
+    @include respond(tab-port)
+        width: 160%
 
 .list_item
     position: absolute
