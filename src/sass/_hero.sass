@@ -30,57 +30,94 @@
 .img_item
     cursor: pointer
     width: 1.5rem
+    @include respond(tab-land)
+        width: 2rem
+    @include respond(tab-port)
+        width: 2.5rem
+    @include respond(phone)
+        width: rem
 .item_1
     top: 88%
     left: 4%
     transform: rotate(-30deg)
+    @include respond(tab-port)
+        top: 88%
+        left: 7%
 
 .item_2
     top: 16%
     left: 13%
-
+    @include respond(tab-port)
+        top: 13%
+        left: 12%
 .item_3
     top: 55%
     left: 31%
-
+    @include respond(tab-port)
+        top: 74%
+        left: 23%
 .item_4
     top: 41%
     left: 38%
-
+    @include respond(tab-port)
+        top: 23%
+        left: 40%
 .item_5
     top: 36%
     left: 48%
-
+    @include respond(tab-port)
+        top: 55%
+        left: 49%
 .item_6
     top: 81%
     left: 52%
-
+    @include respond(tab-port)
+            top: 87%
+            left: 54%
+            transform: rotate(38deg)
 .item_7
     top: 28%
     left: 58%
-
+    @include respond(tab-port)
+        top: 39%
+        left: 60%
+        transform: rotate(-38deg)
 .item_8
     top: 89%
     left: 57%
     transform: rotate(-50deg)
+    @include respond(tab-port)
+        top: 86%
+        left: 66%
 
 .item_10
     top: 13%
     left: 64%
+    @include respond(tab-port)
 
 .item_11
     top: 48%
     left: 66%
-
+    @include respond(tab-port)
+        top: 52%
+        left: 70%
+        transform: rotate(-38deg)
 .item_12
     top: 37%
     left: 83%
-
+    @include respond(tab-port)
+        top: 36%
+        left: 76%
 .item_13
     top: 74%
     left: 88%
-
+    @include respond(tab-port)
+        top: 80%
+        left: 83%
 .item_14
     top: 29%
     left: 96%
     transform: rotate(20deg)
+    @include respond(tab-port)
+        top: 83%
+        left: 94%
