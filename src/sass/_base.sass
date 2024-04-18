@@ -29,11 +29,15 @@ a, a:visited
     background-color: $base-gray-light
     overflow: hidden
     z-index: -1
+    @include respond(tab-port)
+        padding: 6.5rem 4rem
+    @include respond(phone)
+        padding: 3.5rem 2rem
     &__vector-1
         position: absolute
         right: 0
         width: 7rem
-        height: 90rem
+        height: 80rem
         border-radius: 5rem 0 0 0
         border-top: .3rem solid transparent
         border-left: .3rem solid transparent
@@ -41,15 +45,25 @@ a, a:visited
         background-origin: border-box
         background-clip: padding-box, border-box
         z-index: 0
+        @include respond(tab-port)
+            top: 53rem
+            right: 17rem
+            height: 57rem
         @include respond(phone)
-            width: 13.8rem
+            right: 0rem
+            width: 14rem
+            top: 97rem
+        @include respond(phone-se)
+            right: 0rem
+            width: 10rem
+            top: 90rem
 
 
     &__vector-2
         position: absolute
-        right: 6.1rem
+        right: 7rem
         top: 76rem
-        width: 125rem
+        width: 140rem
         height: 80rem
         border-radius: 0 0 5rem 0
         border-bottom: .3rem solid transparent
@@ -59,6 +73,17 @@ a, a:visited
         background-origin: border-box
         background-clip: padding-box, border-box
         z-index: 0
+        @include respond(tab-port)
+            top: 109rem
+            right: 17rem
+            height: 57rem
         @include respond(phone)
-            right: 13.7rem
-            height: 115rem
+            top: 105rem
+            right: 14rem
+            height: 55rem
+        @include respond(phone-se)
+            top: 100rem
+            right: 10rem
+        @include respond(phone-small)
+            top: 94rem
+            right: 10rem
