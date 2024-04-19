@@ -25,65 +25,27 @@ a, a:visited
     color: $base-blue
 
 .container
+    position: relative
     padding: 6.5rem 8rem
     background-color: $base-gray-light
     overflow: hidden
-    z-index: -1
-    @include respond(tab-port)
-        padding: 6.5rem 4rem
-    @include respond(phone)
-        padding: 3.5rem 2rem
-    &__vector-1
+    &::before
         position: absolute
+        content: ''
+        width: 100%
+        height: 100%
+        top: 3%
         right: 0
-        width: 7rem
-        height: 80rem
-        border-radius: 5rem 0 0 0
-        border-top: .3rem solid transparent
-        border-left: .3rem solid transparent
-        background-image: linear-gradient($base-gray-light, $base-gray-light), radial-gradient(ellipse at 51% 0%, rgba(0, 255, 235, 1) 0%, rgba(0, 255, 235, 1) 60%, #89cde2 100%, #89cde2 100%)
-        background-origin: border-box
-        background-clip: padding-box, border-box
-        z-index: 0
+        background-image: url("../img/container-vector.png")
+        background-repeat: no-repeat
+        background-size: 104% 56%
         @include respond(tab-port)
-            top: 53rem
-            right: 17rem
-            height: 57rem
+            top: 20%
+            background-size: 89% 44%
         @include respond(phone)
-            right: 0rem
-            width: 14rem
-            top: 97rem
+            width: 160%
+            top: 24.5%
+            background-size: 100% 27%
         @include respond(phone-se)
-            right: 0rem
-            width: 10rem
-            top: 90rem
-
-
-    &__vector-2
-        position: absolute
-        right: 7rem
-        top: 76rem
-        width: 140rem
-        height: 80rem
-        border-radius: 0 0 5rem 0
-        border-bottom: .3rem solid transparent
-        border-right: .3rem solid transparent
-        border-top: none
-        background-image: linear-gradient($base-gray-light, $base-gray-light), radial-gradient(ellipse at 51% 0%, #89cde2 0%, #89cde2 60%, rgba(7, 58, 187, 1) 100%, rgba(7, 58, 187, 1) 100%)
-        background-origin: border-box
-        background-clip: padding-box, border-box
-        z-index: 0
-        @include respond(tab-port)
-            top: 109rem
-            right: 17rem
-            height: 57rem
-        @include respond(phone)
-            top: 105rem
-            right: 14rem
-            height: 55rem
-        @include respond(phone-se)
-            top: 100rem
-            right: 10rem
-        @include respond(phone-small)
-            top: 94rem
-            right: 10rem
+            top: 22%
+            background-size: 100% 28%
