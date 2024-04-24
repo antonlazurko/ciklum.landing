@@ -5,11 +5,13 @@
         font-size: 7vw
         font-weight: 100
         line-height: 8vw
+        @include respond(phone)
+                margin-left: 6.9rem
         &-win
             font-weight: 500
             margin-left: 20rem
             @include respond(phone)
-                margin-left: 0
+                    margin-left: 6.9rem
 #list
     position: relative
     list-style: none

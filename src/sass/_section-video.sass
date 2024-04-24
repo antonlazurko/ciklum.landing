@@ -5,6 +5,8 @@
     justify-content: space-between
     margin-bottom: 9.6rem
     gap: 1.5rem
+    @include respond(tab-port)
+        margin-bottom: 5.5rem
     @include respond(phone)
         flex-direction: column
     &__description
@@ -24,7 +26,8 @@
             width: 100%
             height: 40vh
         iframe
-            border-radius: 5rem
+            border: none
+            border-radius: 1.6rem
             position: absolute
             top: 5%
             left: 0
@@ -36,6 +39,7 @@
 .we-are
     display: flex
     align-items: center
+    justify-content: space-between
     @include respond(phone)
         justify-content: space-around
     &-text
@@ -49,9 +53,15 @@
         @include respond(phone)
             width: 25vw
 .ciklum-text
-    font-size: 10vw
+    font-size: 10.9vw
     font-weight: 500
     color: $base-blue
+    @include respond(tab-land)
+        font-size: 11.2vw
+    @include respond(tab-port)
+        font-size: 10.7vw
     @include respond(phone)
+        font-size: 21vw
+    @include respond(phone-se)
         font-size: 20vw
 
