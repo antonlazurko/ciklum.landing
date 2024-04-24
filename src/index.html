@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" type="image/png" href="./icons/ciklum_website_favicon_64x64px.webp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Ciklum Landing</title>
 </head>
 <body>
@@ -62,10 +63,6 @@
                 </div>
                 <div class="form__row">
                     <div class="form__group">
-                        <label for="technologies" class="form__label ">Enter the Technologies you work with:*</label>
-                        <input type="text" class="form__input" name="technologies" id="technologies" autocomplete="off" required maxlength="250">
-                    </div>
-                    <div class="form__group">
                         <label for="phone" class="form__label">Your phone number:*</label>
                         <input
                         type="number"
@@ -74,6 +71,38 @@
                         name="phone"
                         autocomplete="off"
                         required>
+                    </div>
+                    <div class="form__group">
+                        <label for="city" class="form__label ">City:</label>
+                        <input type="text" class="form__input" name="city" id="city" autocomplete="off" maxlength="250">
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__group">
+                        <label for="seniority" class="form__label">Indicate your level of seniority:*</label>
+                        <select class="form-select form__input form__input-select" name="seniority" id="seniority" required>
+                            <option value="" disabled="" selected=""></option>
+                            <option value="middle">Middle</option>
+                            <option value="senior">Senior</option>
+                            <option value="lead">Lead</option>
+                            <option value="expert">Expert</option>
+                            <option value="architect">Architect</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="linkedIn" class="form__label ">Your LinkedIn profile:</label>
+                        <input type="text" class="form__input" name="linkedIn" id="linkedIn" autocomplete="off" maxlength="250">
+                    </div>
+                </div>
+                <div class="form__row form__row-technologies">
+                    <div class="form__group">
+                        <label for="technologies" class="form__label ">Enter the Technologies you work with:*</label>
+                        <input type="text" class="form__input" name="technologies" id="technologies" autocomplete="off" required maxlength="250">
+                    </div>
+                    <div class="form__group" style="visibility: hidden; font-size: 0;">
+                        <label></label>
+                        <input>
                     </div>
                 </div>
                 <div class="form__row form__row-personal">
@@ -85,6 +114,17 @@
                         required>
                     <label for="personalDataAgreement" class="form__label">
                         I am informed about processing of my personal data and the right to withdraw my consent
+                    </label>
+                </div>
+                <div class="form__row form__row-personal">
+                    <input
+                        type="checkbox"
+                        class="form__input-checkbox"
+                        id="dataBaseAgreement"
+                        name="dataBaseAgreement"
+                        required>
+                    <label for="dataBaseAgreement" class="form__label">
+                        I agree to be added to Ciklum's recruitment database and be contacted about relevant job offers and other company events
                     </label>
                 </div>
                 <div class="form__row form__row-privacy">

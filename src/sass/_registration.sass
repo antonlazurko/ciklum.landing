@@ -6,7 +6,7 @@
     z-index: 3
     display: flex
     flex-wrap: wrap
-    gap: 3.7rem
+    gap: 3rem
     width: 95%
     padding: 6.8rem 5.6rem
     background-color: #ffffff
@@ -30,6 +30,9 @@
         &-personal
             @include respond(phone)
                 flex-direction: row
+        &-technologies
+            @include respond(phone)
+                gap: 0
     &__group
         width: 100%
         display: flex
@@ -45,20 +48,19 @@
         width: 100%
         &-checkbox
             width: 2.5rem
-            &:focus-visible:invalid
-                border: .1rem solid $base-invalid-red
+            &:focus
+                outline: none
         &-select
-            padding-bottom: 1.8rem
+            padding: 1rem 2rem !important
+            border-radius: 5rem !important
+            font-size: 1.6rem !important
+            border: .1rem solid $base-gray-dark !important
+            background-color: #fff
         &:focus
             outline: none
             box-shadow: $box-shadow
         &:focus-visible:invalid
             border: .1rem solid $base-invalid-red
-
-    &__input:placeholder-shown + &__label
-        opacity: 0
-        visibility: none
-        transform: translateX(.49rem) translateY(-4rem)
 
     &__label
         display: block
@@ -81,3 +83,6 @@
     font-size: 4rem
     font-weight: 100
     margin-bottom: 2rem
+
+select.form__input-select
+    margin-bottom: 0 !important
