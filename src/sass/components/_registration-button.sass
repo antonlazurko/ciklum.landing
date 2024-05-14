@@ -10,6 +10,14 @@
     font-weight: 500
     cursor: pointer
     transition: all .3s
+    @include respond(tab-port)
+        padding: 1.6rem 5.5rem
+    @include respond(phone)
+        padding: 1.2rem 4rem
+    & > img
+        width: 17rem
+        @include respond(phone-se)
+            width: 12rem
     &:hover
-        background-color: $base-gray-light
+        background-color: $base-blue-light
         color: $base-blue
