@@ -17,8 +17,6 @@
             <a href="https://www.ciklum.com/" target="_blank">
                 <img class="logo" src="./img/Ciklum__Logo.png" alt="Ciklum Logo">
             </a>
-            <img class="cross-divider" src="./img/x-divider.png" alt="cross-divider">
-            <span class="ivent-title"><b>DOU</b> Day</span>
         </header>
         <main>
             <div class="hero">
@@ -81,16 +79,8 @@
                     </div>
                     <div class="form__row">
                         <div class="form__group">
-                            <label for="seniority" class="form__label">Indicate your level of seniority:*</label>
-                            <select class="form__input form__input-select" name="seniority" id="seniority" required>
-                                <option value="" disabled="" selected=""></option>
-                                <option value="middle">Middle</option>
-                                <option value="senior">Senior</option>
-                                <option value="lead">Lead</option>
-                                <option value="expert">Expert</option>
-                                <option value="architect">Architect</option>
-                                <option value="other">Other</option>
-                            </select>
+                            <label for="specialty" class="form__label ">Indicate your specialty:*</label>
+                            <input type="text" class="form__input" name="specialty" id="specialty" autocomplete="off" required maxlength="250">
                         </div>
                         <div class="form__group">
                             <label for="linkedIn" class="form__label ">Your LinkedIn profile:</label>
@@ -99,8 +89,16 @@
                     </div>
                     <div class="form__row form__row-technologies">
                         <div class="form__group">
-                            <label for="technologies" class="form__label ">Enter the Technologies you work with:*</label>
-                            <input type="text" class="form__input" name="technologies" id="technologies" autocomplete="off" required maxlength="250">
+                            <label for="study" class="form__label">Indicate your current year of study:*</label>
+                            <select class="form__input form__input-select" name="study" id="study" required>
+                                <option value="" disabled="" selected=""></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
                         </div>
                         <div class="form__group">
                         </div>
