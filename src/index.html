@@ -25,7 +25,13 @@
                 <div class="hero__title">Join the Fun and</div>
                 <div class="hero__title hero__title-win">Win Cool Goodies!</div>
                 <ul id="list">
-                    <img src="./img/intractive-image.png" alt="Interactive Image" class="interactive-image">
+                    <picture>
+                        <source srcset="./img/interactive-image-desktop.webp" media="(min-width: 1200px)"/>
+                        <source srcset="./img/interactive-image-samsung.webp" media="(min-width: 900px)"/>
+                        <source srcset="./img/interactive-image-tablet.webp" media="(min-width: 601px)"/>
+                        <source srcset="./img/interactive-image-phone.webp" media="(max-width: 600px)"/>
+                        <img class="interactive-image" src="./img/interactive-image-samsung.webp" alt="Interactive image"/>
+                    </picture>
                     <li class="list_item item_1"><img class="img_item" id="1" src="./img/logo-colored.png" alt="icon"></li>
                     <li class="list_item item_2"><img class="img_item" id="2" src="./img/logo-white.png" alt="icon"></li>
                     <li class="list_item item_3"><img class="img_item" id="3" src="./img/logo-colored.png" alt="icon"></li>
