@@ -50,7 +50,6 @@ window.addEventListener('load', function() {
                 console.log('Data successfully sent to Google Sheet');
                 clickedLogosArray.length = 0;
                 scoreEl.innerHTML = `Score: <b>${result}</b>`;
-                scoreEl.scrollIntoView({ behavior: 'smooth' });
                 handleIconsVisible();
             } else {
                 throw new Error('Error sending data to Google Sheet');
