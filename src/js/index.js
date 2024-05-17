@@ -1,4 +1,4 @@
-const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwOzskvfyOWe9etpggKu6X2lqw_ZMx_zbFDCLJf_zh0O9ZQb3vVkRYpbtHPG5Rj_jGk3Q/exec';
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbxfmTQS8SDkPPHzn01qmgSj-SlJMdM7bqopj7iUT6Irw4SiU0Pv4Pr8RzpqME-nPbOPAA/exec';
 
 const clickedLogosArray = [];
 
