@@ -38,8 +38,6 @@
     @include respond(tab-land)
         width: 1.2rem
     @include respond(phone)
-        width: 1.8rem
-    @include respond(phone-se)
         width: 1.2rem
 .item_1
     top: 9.5%
@@ -47,7 +45,9 @@
     @include respond(tab-land)
         top: 15.6%
         left: 5.5%
-
+    @include respond(phone)
+        top: 20.6%
+        left: 2.5%
 .item_2
     top: 24%
     left: 3%
@@ -55,8 +55,8 @@
         top: 29%
         left: 5%
     @include respond(phone)
-        top: 20%
-        left: 4.2%
+        top: 59%
+        left: 2.2%
 .item_3
     top: 51%
     left: 5.5%
@@ -64,18 +64,19 @@
         top: 51%
         left: 8%
     @include respond(phone)
-        left: 12.4%
+        top: 82%
+        left: 4.4%
 .item_4
     top: 83%
     left: 10%
     @include respond(tab-land)
         left: 12.5%
     @include respond(phone)
-        top: 1.8%
-        left: 15.5%
+        top: 14.8%
+        left: 11.5%
 .item_5
     top: 66%
-    left: 11.2%
+    left: 11.5%
     @include respond(tab-land)
         top: 67.7%
         left: 14.2%
@@ -83,8 +84,8 @@
         top: 78.6%
         left: 22.2%
 .item_6
-    top: 34.3%
-    left: 12.9%
+    top: 34.6%
+    left: 13.2%
     @include respond(tab-land)
             top: 38.3%
             left: 15.9%
@@ -99,8 +100,8 @@
         top: 57.5%
         left: 20.5%
     @include respond(phone)
-        top: 39%
-        left: 33%
+        top: 54%
+        left: 40%
 .item_8
     top: 83%
     left: 19%
@@ -116,6 +117,9 @@
     @include respond(tab-land)
         top: 61%
         left: 30%
+    @include respond(phone)
+        top: 60%
+        left: 15%
 
 .item_11
     top: 13.7%
@@ -124,21 +128,27 @@
         top: 19.7%
         left: 28%
     @include respond(phone)
-        top: 58%
-        left: 67%
+        top: 89%
+        left: 25.2%
 
 .item_12
     top: 36%
     left: 24.3%
     @include respond(tab-land)
         left: 27.3%
+    @include respond(phone)
+        top: 29%
+        left: 28.2%
 
 .item_13
-    top: 31%
-    left: 25%
+    top: 28%
+    left: 33%
     @include respond(tab-land)
-        top: 36%
-        left: 35%
+        top: 33%
+        left: 38%
+    @include respond(phone)
+        top: 27%
+        left: 33%
 
 .item_14
     top: 26%
@@ -147,26 +157,35 @@
         top: 31%
         left: 40%
     @include respond(phone)
-        top: 35%
-        left: 56%
+        top: 28%
+        left: 39%
 .item_15
     top: 28%
     left: 39.5%
     @include respond(tab-land)
         top: 32%
         left: 44.5%
+    @include respond(phone)
+        top: 30%
+        left: 46%
 .item_16
     top: 29%
     left: 43%
     @include respond(tab-land)
         top: 34%
         left: 49%
+    @include respond(phone)
+        top: 51%
+        left: 67%
 .item_17
     top: 50.5%
     left: 55.5%
     @include respond(tab-land)
         top: 53.5%
         left: 62.5%
+    @include respond(phone)
+        top: 39%
+        left: 76.5%
 .item_18
     top: 56%
     left: 64%
@@ -175,20 +194,27 @@
         top: 60%
         left: 72%
     @include respond(phone)
-        top: 90%
-        left: 93%
+        top: 95%
+        left: 88.3%
 .item_19
     top: 11.5%
     left: 63.3%
     @include respond(tab-land)
         top: 17.5%
         left: 71.3%
+    @include respond(phone)
+        top: 17.2%
+        left: 71.1%
 .item_20
-    top: 43.4%
-    left: 85.3%
+    top: 43.8%
+    left: 85.7%
     @include respond(tab-land)
         top: 47.3%
         left: 95.1%
+    @include respond(phone)
+        top: 70%
+        left: 89.2%
+        transform: rotate(160deg)
 .item_21
     top: 52%
     left: 89%
@@ -196,5 +222,5 @@
         top: 95%
         left: 82%
     @include respond(phone)
-        top: 15%
+        top: 14%
         left: 82%
