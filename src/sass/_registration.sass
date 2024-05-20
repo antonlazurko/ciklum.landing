@@ -28,6 +28,8 @@
         @include respond(phone)
             margin-right: 0
             flex-direction: column
+        @include respond(phone)
+            gap: 1rem
         &-personal
             @include respond(phone)
                 flex-direction: row
@@ -68,6 +70,11 @@
             background-position: 96% center
             @include respond(phone)
                 background-size: 3%
+            @include respond(phone-se)
+                background-size: 5%
+                background-position: 94% center
+            @include respond(phone-small)
+                background-size: 6%
             &::-ms-expand
                 display: none
         &:focus
@@ -91,9 +98,10 @@
     overflow: hidden
     white-space: nowrap
     text-overflow: ellipsis
+.score-wrapper
+    display: flex
+    align-items: center
 .score
-    text-align: center
     color: $base-blue
     font-size: 4rem
     font-weight: 100
-    margin-bottom: 2rem

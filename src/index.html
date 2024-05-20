@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" type="image/png" href="./icons/ciklum_website_favicon_64x64px.webp">
-    <title>Ciklum Landing</title>
+    <title>Ciklum X DOU Day</title>
 </head>
 <body>
     <div class="container">
@@ -24,25 +24,42 @@
             <div class="hero">
                 <div class="hero__title">Join the Fun and</div>
                 <div class="hero__title hero__title-win">Win Cool Goodies!</div>
+                <p class="hero__description">
+                    Collect as many Ciklum logos as you can in the image, fill out the form, and win some cool goodies.
+                    At the end of the conference, we will also raffle the grand prize among all registered participants.
+                    Best of luck!
+                </p>
                 <ul id="list">
-                    <img src="./img/intractive-image.png" alt="Interactive Image" class="interactive-image">
-                    <li class="list_item item_1"><img class="img_item" id="1" src="./img/logo-colored.png" alt="icon"></li>
-                    <li class="list_item item_2"><img class="img_item" id="2" src="./img/logo-white.png" alt="icon"></li>
-                    <li class="list_item item_3"><img class="img_item" id="3" src="./img/logo-colored.png" alt="icon"></li>
+                    <picture>
+                        <source srcset="./img/interactive-image-desk.webp" media="(min-width: 1200px)"/>
+                        <source srcset="./img/interactive-image-tab.webp" media="(min-width: 601px)"/>
+                        <source srcset="./img/interactive-image-mob.webp" media="(max-width: 600px)"/>
+                        <img class="interactive-image" src="./img/interactive-image-desk.webp" alt="Interactive image"/>
+                    </picture>
+                    <li class="list_item item_1"><img class="img_item" id="1" src="./img/logo-grey.png" alt="icon"></li>
+                    <li class="list_item item_2"><img class="img_item" id="2" src="./img/logo-grey.png" alt="icon"></li>
+                    <li class="list_item item_3"><img class="img_item" id="3" src="./img/logo-grey-light.png" alt="icon"></li>
                     <li class="list_item item_4"><img class="img_item" id="4" src="./img/logo-colored.png" alt="icon"></li>
-                    <li class="list_item item_5"><img class="img_item" id="5" src="./img/logo-black.png" alt="icon"></li>
-                    <li class="list_item item_6"><img class="img_item" id="6" src="./img/logo-black.png" alt="icon"></li>
-                    <li class="list_item item_7"><img class="img_item" id="7" src="./img/logo-white.png" alt="icon"></li>
-                    <li class="list_item item_8"><img class="img_item" id="8" src="./img/logo-white.png" alt="icon"></li>
+                    <li class="list_item item_5"><img class="img_item" id="5" src="./img/logo-grey.png" alt="icon"></li>
+                    <li class="list_item item_6"><img class="img_item" id="6" src="./img/logo-grey.png" alt="icon"></li>
+                    <li class="list_item item_7"><img class="img_item" id="7" src="./img/logo-grey-light.png" alt="icon"></li>
+                    <li class="list_item item_8"><img class="img_item" id="8" src="./img/logo-grey-light.png" alt="icon"></li>
                     <li class="list_item item_10"><img class="img_item" id="10" src="./img/logo-colored.png" alt="icon"></li>
-                    <li class="list_item item_11"><img class="img_item" id="11" src="./img/logo-black.png" alt="icon"></li>
-                    <li class="list_item item_12"><img class="img_item" id="12" src="./img/logo-colored.png" alt="icon"></li>
-                    <li class="list_item item_13"><img class="img_item" id="13" src="./img/logo-colored.png" alt="icon"></li>
-                    <li class="list_item item_14"><img class="img_item" id="14" src="./img/logo-colored.png" alt="icon"></li>
+                    <li class="list_item item_11"><img class="img_item" id="11" src="./img/logo-colored.png" alt="icon"></li>
+
+                    <li class="list_item item_12"><img class="img_item" id="12" src="./img/logo-grey.png" alt="icon"></li>
+                    <li class="list_item item_13"><img class="img_item" id="13" src="./img/logo-grey.png" alt="icon"></li>
+                    <li class="list_item item_14"><img class="img_item" id="14" src="./img/logo-grey.png" alt="icon"></li>
+                    <li class="list_item item_15"><img class="img_item" id="15" src="./img/logo-grey.png" alt="icon"></li>
+                    <li class="list_item item_16"><img class="img_item" id="16" src="./img/logo-grey.png" alt="icon"></li>
+                    <li class="list_item item_17"><img class="img_item" id="17" src="./img/logo-grey.png" alt="icon"></li>
+                    <li class="list_item item_18"><img class="img_item" id="18" src="./img/logo-grey-light.png" alt="icon"></li>
+                    <li class="list_item item_19"><img class="img_item" id="19" src="./img/logo-grey-light.png" alt="icon"></li>
+                    <li class="list_item item_20"><img class="img_item" id="20" src="./img/logo-colored.png" alt="icon"></li>
+                    <li class="list_item item_21"><img class="img_item" id="21" src="./img/logo-grey-light.png" alt="icon"></li>
                 </ul>
             </div>
             <div class="registration">
-                <h2 id="score" class="score"></h2>
                 <div class="loader-container" id="loader">
                     <div class="loader"></div>
                 </div>
@@ -135,8 +152,11 @@
                         </p>
                     </div>
                     <button type="submit" class="button-registration">
-                        <img src="./icons/get-a-prize.svg" alt="arrow">
+                        Click. Hunt. Win!
                     </button>
+                    <div class="score-wrapper">
+                        <h2 id="score" class="score"></h2>
+                    </div>
                 </form>
             </div>
             <div class="section-video">
@@ -185,7 +205,7 @@
         </main>
         <footer class="footer">
             <div class="social">
-                <a href="https://www.facebook.com/ciklum/" target="_blank">
+                <a href="https://www.facebook.com/CiklumPoland" target="_blank">
                     <img class="social_icon" src="./icons/Facebook.png" alt="Facebook">
                 </a>
                 <a href="https://www.instagram.com/ciklum/" target="_blank">

@@ -14,10 +14,12 @@
         padding: 1.6rem 5.5rem
     @include respond(phone)
         padding: 1.2rem 4rem
+    @include respond(phone-se)
+        padding: 1.2rem 1.5rem
+    @include respond(phone-small)
+        padding: 1.2rem 1rem
     & > img
-        width: 17rem
-        @include respond(phone-se)
-            width: 12rem
+        width: 100%
     &:hover
         background-color: $base-blue-light
         color: $base-blue

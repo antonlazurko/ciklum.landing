@@ -1,4 +1,5 @@
 .hero
+    margin-bottom: 8rem
     &__title
         margin-bottom: 3rem
         color: $base-blue
@@ -9,18 +10,27 @@
             font-weight: 500
             margin-left: 20rem
             @include respond(phone)
-                    margin-left: 0
+                margin-left: 0
+    &__description
+        width: 60%
+        margin-bottom: 6rem
+        color: $base-dark
+        font-size: 3.2rem
+        font-weight: 200
+        line-height: 1.2
+        @include respond(tab-port)
+            font-size: 2.4rem
+            width: 100%
+        @include respond(phone)
+            font-size: 2rem
+            width: 100%
 #list
     position: relative
     list-style: none
     margin: 0 -8rem
 
 .interactive-image
-    display: block
     width: 100%
-    height: auto
-    @include respond(tab-port)
-        width: 160%
 
 .list_item
     position: absolute
@@ -30,93 +40,193 @@
 
 .img_item
     cursor: pointer
-    width: 1rem
-    @include respond(tab-port)
-        width: 2rem
+    width: 1.5rem
+    @include respond(tab-land)
+        width: 1.2rem
     @include respond(phone)
-        width: 3rem
+        width: 1.2rem
 .item_1
-    top: 88%
-    left: 4%
-    transform: rotate(-30deg)
-    @include respond(tab-port)
-        top: 88%
-        left: 7%
-
+    top: 9.5%
+    left: 3.5%
+    @include respond(tab-land)
+        top: 15.6%
+        left: 5.5%
+    @include respond(phone)
+        top: 20.6%
+        left: 2.5%
 .item_2
-    top: 16%
-    left: 13%
-    @include respond(tab-port)
-        top: 13%
-        left: 12%
+    top: 24%
+    left: 3%
+    @include respond(tab-land)
+        top: 29%
+        left: 5%
+    @include respond(phone)
+        top: 59%
+        left: 2.2%
 .item_3
-    top: 55%
-    left: 31%
-    @include respond(tab-port)
-        top: 74%
-        left: 23%
+    top: 51%
+    left: 5.5%
+    @include respond(tab-land)
+        top: 51%
+        left: 8%
+    @include respond(phone)
+        top: 82%
+        left: 4.4%
 .item_4
-    top: 41%
-    left: 38%
-    @include respond(tab-port)
-        top: 23%
-        left: 40%
+    top: 83%
+    left: 10%
+    @include respond(tab-land)
+        left: 12.5%
+    @include respond(phone)
+        top: 14.8%
+        left: 11.5%
 .item_5
-    top: 36%
-    left: 48%
-    @include respond(tab-port)
-        top: 55%
-        left: 49%
+    top: 66%
+    left: 11.5%
+    @include respond(tab-land)
+        top: 67.7%
+        left: 14.2%
+    @include respond(phone)
+        top: 78.6%
+        left: 22.2%
 .item_6
-    top: 81%
-    left: 52%
-    @include respond(tab-port)
-            top: 87%
-            left: 54%
+    top: 34.6%
+    left: 13.2%
+    @include respond(tab-land)
+            top: 38.3%
+            left: 15.9%
             transform: rotate(38deg)
+    @include respond(phone)
+            top: 84%
+            left: 60.5%
 .item_7
-    top: 28%
-    left: 58%
-    @include respond(tab-port)
-        top: 39%
-        left: 60%
-        transform: rotate(-38deg)
+    top: 55%
+    left: 17%
+    @include respond(tab-land)
+        top: 57.5%
+        left: 20.5%
+    @include respond(phone)
+        top: 54%
+        left: 40%
 .item_8
-    top: 89%
-    left: 57%
-    transform: rotate(-50deg)
-    @include respond(tab-port)
-        top: 86%
-        left: 66%
+    top: 83%
+    left: 19%
+    @include respond(tab-land)
+        left: 23%
+    @include respond(phone)
+        top: 80.5%
+        left: 56.9%
 
 .item_10
-    top: 13%
-    left: 64%
-    @include respond(tab-port)
+    top: 59%
+    left: 26%
+    @include respond(tab-land)
+        top: 61%
+        left: 30%
+    @include respond(phone)
+        top: 60%
+        left: 15%
 
 .item_11
-    top: 48%
-    left: 66%
-    @include respond(tab-port)
-        top: 52%
-        left: 70%
-        transform: rotate(-38deg)
+    top: 13.7%
+    left: 24%
+    @include respond(tab-land)
+        top: 19.7%
+        left: 28%
+    @include respond(phone)
+        top: 89%
+        left: 25.2%
+
 .item_12
-    top: 37%
-    left: 83%
-    @include respond(tab-port)
-        top: 36%
-        left: 76%
+    top: 36%
+    left: 24.3%
+    @include respond(tab-land)
+        left: 27.3%
+    @include respond(phone)
+        top: 29%
+        left: 28.2%
+
 .item_13
-    top: 74%
-    left: 88%
-    @include respond(tab-port)
-        top: 80%
-        left: 83%
+    top: 28%
+    left: 33%
+    @include respond(tab-land)
+        top: 33%
+        left: 38%
+    @include respond(phone)
+        top: 27%
+        left: 33%
+
 .item_14
+    top: 26%
+    left: 36%
+    @include respond(tab-land)
+        top: 31%
+        left: 40%
+    @include respond(phone)
+        top: 28%
+        left: 39%
+.item_15
+    top: 28%
+    left: 39.5%
+    @include respond(tab-land)
+        top: 32%
+        left: 44.5%
+    @include respond(phone)
+        top: 30%
+        left: 46%
+.item_16
     top: 29%
-    left: 96%
-    transform: rotate(20deg)
-    @include respond(tab-port)
-        top: 83%
-        left: 94%
+    left: 43%
+    @include respond(tab-land)
+        top: 34%
+        left: 49%
+    @include respond(phone)
+        top: 51%
+        left: 67%
+.item_17
+    top: 50.5%
+    left: 55.5%
+    @include respond(tab-land)
+        top: 53.5%
+        left: 62.5%
+    @include respond(phone)
+        top: 39%
+        left: 76.5%
+.item_18
+    top: 56%
+    left: 64%
+    transform: rotate(15deg)
+    @include respond(tab-land)
+        top: 60%
+        left: 72%
+    @include respond(phone)
+        top: 95%
+        left: 88.3%
+.item_19
+    top: 11.5%
+    left: 63.3%
+    @include respond(tab-land)
+        top: 17.5%
+        left: 71.3%
+    @include respond(phone)
+        top: 17.2%
+        left: 71.1%
+.item_20
+    top: 43.8%
+    left: 85.7%
+    @include respond(tab-land)
+        top: 47.3%
+        left: 95.1%
+    @include respond(phone)
+        top: 70%
+        left: 89.2%
+        transform: rotate(160deg)
+.item_21
+    top: 52%
+    left: 89%
+    @include respond(tab-land)
+        top: 95%
+        left: 82%
+    @include respond(phone)
+        top: 14%
+        left: 82%

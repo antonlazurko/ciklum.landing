@@ -10,11 +10,19 @@
 .logo
     width: 13rem
     height: 4.3rem
+    @include respond(phone-small)
+        width: 9.6rem
+        height: 3rem
 .cross-divider
-    width: 4.2rem
+    width: 4.7rem
+    @include respond(phone-small)
+        width: 2.8rem
 .ivent-title
     width: 26.5rem
     height: 3.3rem
     @include respond(tab-port)
         width: 23rem
         height: 2.9rem
+    @include respond(phone-small)
+        width: 11rem
+        height: 1.3rem
